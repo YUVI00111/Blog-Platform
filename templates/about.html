@@ -1,45 +1,30 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>About Blog</title>
+{% extends "base.html" %}
 
-<style>
+{% block content %}
 
-body{
-background: linear-gradient(to right,#36d1dc,#5b86e5);
-font-family: Arial;
-text-align: center;
-margin-top:150px;
-}
+<h1 style="color:white; font-size:50px; text-shadow:3px 3px 6px black;">
+    About This Blog
+</h1>
 
-h1{
-color:white;
-font-size:45px;
-text-shadow:3px 3px 6px black;
-}
+<p style="color:yellow; font-size:22px;">
+    This blogging platform is created using Flask.
+</p>
 
-p{
-color:yellow;
-font-size:22px;
-}
+<br>
 
-a{
-color:white;
-font-size:20px;
-text-decoration:none;
-}
+<a href="/" 
+   style="
+   display:inline-block;
+   margin-top:30px;
+   font-size:20px;
+   color:white;
+   background-color:black;
+   padding:10px 20px;
+   text-decoration:none;
+   border-radius:10px;">
+   
+   Go Back Home
 
-</style>
+</a>
 
-</head>
-
-<body>
-
-<h1>About This Blog</h1>
-
-<p>This blogging platform is created using Flask.</p>
-
-<a href="/">Go Back Home</a>
-
-</body>
-</html>
+{% endblock %}
